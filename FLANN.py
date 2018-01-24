@@ -7,7 +7,7 @@ This is a temporary script file.
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-img2=cv2.imread(r'C:\Users\zylzlh\Desktop\zhuanji.jpg',0)
+img2=cv2.imread(r'C:\Users\zylzlh\Desktop\qiuyi.jpg',0)
 img1=cv2.imread(r'C:\Users\zylzlh\Desktop\biaozhi.jpg',0)
 sift=cv2.xfeatures2d.SIFT_create()
 kp1,des1=sift.detectAndCompute(img1,None)
