@@ -1,6 +1,6 @@
 Tensorflow安装
-
-在终端或cmd中输入以下命令搜索当前可用的tensorflow版本
+在Anaconda Prompt中输入以下命令搜索当前可用的tensorflow版本
+>>>>>>> install tensorflow by anaconda
 
 $ anaconda search -t conda tensorflow
 
