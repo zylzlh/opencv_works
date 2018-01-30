@@ -1,0 +1,1 @@
+type C:\Users\zylzlh\Desktop\raw_data.txt | C:\Users\zylzlh\Desktop\1.py "[0-9]" | C:\Users\zylzlh\Desktop\2.py
