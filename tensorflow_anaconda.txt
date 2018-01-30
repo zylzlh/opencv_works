@@ -1,0 +1,80 @@
+Tensorflow安装
+
+在终端或cmd中输入以下命令搜索当前可用的tensorflow版本
+
+$ anaconda search -t conda tensorflow
+
+Using Anaconda API: https://api.anaconda.org
+Run 'anaconda show <USER/PACKAGE>' to get more details:
+Packages:
+     Name                      |  Version | Package Types   | Platforms      
+     ------------------------- |   ------ | --------------- | ---------------
+     HCC/tensorflow            |    1.0.0 | conda           | linux-64       
+     HCC/tensorflow-cpucompat  |    1.0.0 | conda           | linux-64       
+     HCC/tensorflow-fma        |    1.0.0 | conda           | linux-64       
+     SentientPrime/tensorflow  |    0.6.0 | conda           | osx-64         
+                                          : TensorFlow helps the tensors flow
+     acellera/tensorflow-cuda  |   0.12.1 | conda           | linux-64       
+     anaconda/tensorflow       |    1.0.1 | conda           | linux-64       
+     anaconda/tensorflow-gpu   |    1.0.1 | conda           | linux-64       
+     conda-forge/tensorflow    |    1.0.0 | conda           | linux-64, win-64, osx-64
+                                          : TensorFlow helps the tensors flow
+     creditx/tensorflow        |    0.9.0 | conda           | linux-64       
+                                          : TensorFlow helps the tensors flow
+     derickl/tensorflow        |   0.12.1 | conda           | osx-64         
+     dhirschfeld/tensorflow    | 0.12.0rc0 | conda           | win-64         
+     dseuss/tensorflow         |          | conda           | osx-64         
+     guyanhua/tensorflow       |    1.0.0 | conda           | linux-64       
+     ijstokes/tensorflow       | 2017.03.03.1349 | conda, ipynb    | linux-64       
+     jjh_cio_testing/tensorflow |    1.0.1 | conda           | linux-64       
+     jjh_cio_testing/tensorflow-gpu |    1.0.1 | conda           | linux-64       
+     jjh_ppc64le/tensorflow    |    1.0.1 | conda           | linux-ppc64le  
+     jjh_ppc64le/tensorflow-gpu |    1.0.1 | conda           | linux-ppc64le  
+     jjhelmus/tensorflow       | 0.12.0rc0 | conda, pypi     | linux-64, osx-64
+                                          : TensorFlow helps the tensors flow
+     jjhelmus/tensorflow-gpu   |    1.0.1 | conda           | linux-64       
+     kevin-keraudren/tensorflow |    0.9.0 | conda           | linux-64       
+     lcls-rhel7/tensorflow     |   0.12.1 | conda           | linux-64       
+     marta-sd/tensorflow       |    1.0.1 | conda           | linux-64       
+                                          : TensorFlow helps the tensors flow
+     memex/tensorflow          |    0.5.0 | conda           | linux-64, osx-64
+                                          : TensorFlow helps the tensors flow
+     mhworth/tensorflow        |    0.7.1 | conda           | osx-64         
+                                          : TensorFlow helps the tensors flow
+     miovision/tensorflow      | 0.10.0.gpu | conda           | linux-64, osx-64
+     msarahan/tensorflow       | 1.0.0rc2 | conda           | linux-64       
+     mutirri/tensorflow        | 0.10.0rc0 | conda           | linux-64       
+     mwojcikowski/tensorflow   |    1.0.1 | conda           | linux-64       
+     rdonnelly/tensorflow      |    0.9.0 | conda           | linux-64       
+     rdonnellyr/r-tensorflow   |    0.4.0 | conda           | osx-64         
+     test_org_002/tensorflow   | 0.10.0rc0 | conda           |                
+Found 32 packages
+选择一个较新的CPU或GPU版本，如jjh_cio_testing/tensorflow-gpu的1.0.1版本，输入如下命令查询安装命令
+
+$ anaconda show jjh_cio_testing/tensorflow-gpu
+
+Using Anaconda API: https://api.anaconda.org
+Name:    tensorflow-gpu
+Summary: 
+Access:  public
+Package Types:  conda
+Versions:
+   + 1.0.1
+
+To install this package with conda run:
+     conda install --channel https://conda.anaconda.org/jjh_cio_testing tensorflow-gpu
+使用最后一行的提示命令进行安装
+
+$ conda install --channel https://conda.anaconda.org/jjh_cio_testing tensorflow-gpu
+
+Fetching package metadata .............
+Solving package specifications: .
+
+Package plan for installation in environment /home/will/anaconda2:
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+    tensorflow-gpu: 1.0.1-py27_4 https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free --> 1.0.1-py27_4 jjh_cio_testing
+
+Proceed ([y]/n)? 
+conda会自动检测安装此版本的Tensorflow所依赖的库，如果你的Anaconda缺少这些依赖库，会提示你安装。因为我之前已经安装过了，所以这里只提示我安装Tensorflow。输入y并回车之后等待安装结束即可
